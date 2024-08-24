@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>capitan vasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+  <link href="https://fonts.googleapis.com/css2? family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+</head>
+<body>
+
+<!-------------PICS PART----------->
+<section id="pics">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="./image/res1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="./image/res2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="./image/res3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="./image/res5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="./image/res4.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="./image/res6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</section>
+
+
+<!-------------PICS PART css----------->
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    } 
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+      width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+
+    position: relative;
+    max-width: 100%;
+     margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none; 
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    /* Responsive adjustments */
+@media (max-width: 768px) {
+  .prev, .next {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev, .next {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .numbertext {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .numbertext {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .prev, .next {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev, .next {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 320px){
+    .prev, .next {
+    font-size: 12px;
+    padding: 0px;
+    margin-left: 20px;
+    }}
+
+
+
+</style>
+
+
+
+
+
+<!-------------MENU PART----------->
+<section>
+    <div class="container">
+        <div class="bg-text">
+            <h1>Antipasti carne:</h1>
+    
+            <p>Antipasto completo del capitano (affettati villani, selezione di formaggi, bruschetta pomodoro,<br> bruschetta mozzarella e
+            
+            pancetta, piatti caldi a fantasia di Gabriel) </p>
+            
+            <p>Bruschette con pomodoro (2p) </p>
+            
+            <p>Bruschette con mozzarella e pancetta(2p) </p>
+            
+            <p>Bruschette con lardo e pomodorino(2p) </p>
+            
+            <p>Misto di affettati (Villani) </p>
+            
+            <p>Selezione di formaggi </p>
+            
+            <p>Prosciutto tagliato a mano Parma 18 mesi </p>
+            
+            <p>Speck d'oca affumicato su letto di finocchi e arance </p>
+            
+            <h1>Antipasti pesce:</h1>
+            
+            <p>Antipasto misto 8 portate </p>
+            
+            <p>Carpaccio di gamberi scottato con stracciatella di bufala e olio al basilico </p>
+            
+            <p>Tataki di tonno con ananas al cannello </p>
+            
+            <p>Cono con Mouse di salmone affumicato e ricotta alla menta</p>
+            
+            <p>Mazzancolle alla catalana </p>
+            
+            <p>Fiori di zucca con baccalà in tempura </p>
+            
+            <p>Soutè di cozze </p>
+            
+            <p>Crudi di pesce</p>
+        <p>CRUDO COMPLETO (scampo, gambero rosso, gambero rosa,<br> Mazzancolla locale, Mazzancolla blu, sfilettato del giorno)p</p>
+    
+        <p>Carpaccio di triglia fresca</p>
+        </div>  
+          
+    <div class="bg-text">
+      <h1>Primi carne:</h1>
+    
+    <p>Cacio & pepe </p>
+    
+    <p>Fettuccina al ragù di daino </p>
+    
+    <p>Panzotti ripieni di ricotta di bufala e carciofi, cremoso di tartufo bianco e mix di formaggi </p>
+    
+    <p>Agnolotti ai funghi porcini con guanciale, pecorino e tartufo 
+    
+    (bosco del Re)</p>
+    
+    <h1>Primi pesce:</h1>
+    
+    <p>Tagliolino alle vongole locali </p>
+    
+    <p>Tagliolino limone fiori di zucca e gamberi </p>
+    
+    <p>Risotto alla crema di scampi </p>
+    
+    <p>Creste burrata e basilico con pomodorini confit, olive e </p>
+    
+    <p>carpaccio di gambero </p>
+    
+    </div>
+            
+    <div class="bg-text">
+      <h1>Secondi carne:</h1>
+    
+    <p>Coscia di faraona con cicoriella di campo</p>
+    
+    <p>Stinco di agnello con purè di patate viola (500g)</p>
+    
+    <p>Ribs (costine di maialino da latte cotto a bassa temperatura) </p>
+    
+    <p>Churrasco (scottona alla spada)</p>
+    
+    <p>Bistecca di vacca vecchia Italia con patatine fritte</p>
+    
+    <p>Tagliata di vacca vecchia Italia con rucola, grana, pachino,<br> noci,
+    
+    aceto balsamico/lardo/sale e olio
+    </p>
+    <p>Filetto di vacca vecchia Italia su letto di rucola</p>
+    
+    <h1>Secondi pesce:</h1>
+    
+    <p>Frittura di calamari e gamberi</p>
+    
+    <p>Grigliata di pesce (scampo, gambero, mazzancolle, calamaro, sfilettato del giorno)</p>
+    
+    <p>Tagliata di tonno fresco </p>
+    <p>Pescato del giorno 7/h (rombi, fravoline e spigole) <br>al forno o alla brace con patate al forno</p>   
+    </div>   
+</section>
+
+
+
+<!-------------MENU PART CSS----------->
+<style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .bg-text {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: 10px solid #f1f1f1;
+            z-index: 2;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .bg-text {
+                font-size: 18px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bg-text {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 320px) {
+            .bg-text {
+                font-size: 12px;
+                padding: 10px;
+            }
+        }
+
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <title> Menu Panini</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <video controls autoplay muted loop src="./image/vidp.mp4"></video>
+        </div>
+        <div class="right">
+            <img src="./image/pp.png" alt="Picture" class="top-right-img">
+            <div class="center-div">
+
+                <center><h1>Menu</h1></center>
+
+                <p> Panino solo carne</p>
+             
+             
+                <p> Panino carne più aggiunte </p>
+             
+                 
+                <p> Panino farcito doppia carne </p>
+             
+                 
+                <p> Panino vegetariano </p>
+             
+                 
+                <p> Patatine </p>
+             
+                 
+                <p> Crocchettone di patate con bacon </p>
+             
+                 
+                 <p>Arrosticini 
+                 
+                 <p>CARNE: salsiccia, hamburger, capocollo, wurstel.</p>
+             
+                <p> Ingredienti aggiuntivi: bacon, melanzane sott'olio, żucchinella fritta e menta, <br>
+                 cicoria, peperoni arrosto, pomodori, insalata ,mozzarella,<br>
+                  melanzane grigliate, cipolla caramellata</p>
+             
+             
+                 <p> (Con un ampio menù di bevande venite a degustare qui)</p>
+             
+                 <center><h2> La Paninoteca è aperta senza prenotazione dalle 19:30 alle 00:00 (self service)</h2></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./image/bois.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: flex;
+    flex-direction: row; 
+    height: 100%;
+    width: 100%;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left video {
+    max-width: 100%;
+    height: 100%;
+    border: double black 5px;
+}
+
+.right {
+    flex: 2.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.top-right-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: auto;
+}
+
+.center-div {
+    width: 70%;
+    background-image: url(./image/menu.jpg);
+    background-size: cover;
+    color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 3px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: black 2px 2px;
+    font-size: 20px;
+    margin-right: 14%;
+    margin-top: 25px;
+}
+.center-div h1{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.center-div h2{
+    font-style: italic;
+    color: forestgreen;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .left video {
+        height: auto;
+        max-width: 80%; /* Full width video */
+        padding: 10px;
+    }
+    .left{
+        padding: 10px;
+    }
+
+    .top-right-img {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .center-div {
+        width: 90%; /* Adjust width for better fit */
+        margin: 0 auto; /* Center the div */
+        font-size: 15px;
+        margin: 25px;
+    }
+    .center-div h1{
+        font-family: cursive;
+        font-style: italic;
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    .center-div h2{
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 17px;
+        color: forestgreen;
+    }
+}
+
+ /*-------------------RESPENSIVE !!!! -------------------------- */
+ .container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* xs */
+   @media (min-width: 475px) {
+      .container{
+          max-width: 475px
+      }
+   } 
+  /* sm */
+   @media (min-width: 640px) {
+      .container{
+          max-width: 640px
+      }
+   }  
+  /* md */
+   @media (min-width: 768px) {
+      .container{
+          max-width: 768px
+      }
+   }  
+  /* lg */
+   @media (min-width: 1024px) {
+      .container{
+          max-width: 1024px
+      }   
+   }   
+  /* xl */
+   @media (min-width: 1280px) {
+      .container{
+          max-width: 1024px
+      }     
+   } 
+  /* 2xl */
+   @media (min-width: 1440px) {
+      .container{
+          max-width: 2560px
+      }    
+   } 
+</style>
